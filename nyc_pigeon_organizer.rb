@@ -17,6 +17,7 @@ def nyc_pigeon_organizer(pigeon_data)
           new_hash[name] = {}
           new_hash[name][trait_key] = []
           new_hash[name][trait_key] << trait_value.to_s #give joe a hash, point to a color array, insert this color
+          #double check why i can't do it all at once, new_hash[name][trait_key] <<trait_key.to_s, all in one line
         end
       end
     end
